@@ -1,6 +1,7 @@
 import java.io.*;
 
 public class BOJ_17425 {
+
 	static final int MAX = 1000000;
 	public static void main(String[] args) throws IOException {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -15,8 +16,8 @@ public class BOJ_17425 {
 			}
 		}
 		long[] s = new long[MAX + 1];
-		for (int i = 1; i <= MAX ; i++) {
-			s[i] = s[i-1] + d[i];
+		for (int i = 1; i <= MAX; i++) {
+			s[i] = s[i - 1] + d[i];
 		}
 		int t = Integer.parseInt(bf.readLine());
 		while (t-- > 0) {
