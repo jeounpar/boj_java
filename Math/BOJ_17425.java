@@ -1,3 +1,5 @@
+package Math;
+
 import java.io.*;
 
 public class BOJ_17425 {

@@ -1,3 +1,5 @@
+package Math;
+
 import java.util.Scanner;
 
 public class BOJ_1978 {
