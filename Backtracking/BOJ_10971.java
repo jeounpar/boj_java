@@ -22,7 +22,7 @@ public class BOJ_10971 {
 			return;
 		}
 
-		for (int i = 0; i < n; i++) {
+		for (int i = 1; i < n; i++) {
 			if (ok[i]) continue;
 			if (a[curr][i] == 0) continue;
 			ok[i] = true;
@@ -41,13 +41,12 @@ public class BOJ_10971 {
 				a[i][j] = sc.nextInt();
 			}
 		}
-		for (int i = 0; i < n; i++) {
-			ArrayList<Integer> visited = new ArrayList<>();
-			boolean[] ok = new boolean[10];
-			ok[i] = true;
-			visited.add(i);
-			solve(i, i, visited, ok);
-		}
+		ArrayList<Integer> visited = new ArrayList<>();
+		boolean[] ok = new boolean[10];
+		ok[0] = true;
+		visited.add(0);
+		solve(0, 0, visited, ok);
+
 		System.out.println(ans);
 	}
 }
