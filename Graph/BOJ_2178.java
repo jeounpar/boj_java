@@ -4,15 +4,6 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Pair{
-	int x;
-	int y;
-	Pair(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-}
-
 public class BOJ_2178 {
 	static int[][] a;
 	static int n, m;
